@@ -1,0 +1,1072 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/billhead"
+            android:text="Bill"
+            android:textSize="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"/>
+        <EditText
+            android:id="@+id/billname"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/billhead"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:hint="Client name"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/billaddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/billhead"
+            android:layout_toRightOf="@+id/billname"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:hint="Client Address"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/billgst"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/billname"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/white"
+            android:hint="Client GST"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="15dp" />
+        <EditText
+            android:id="@+id/billno"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/billgst"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:hint="Bill NO."
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/billdate"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/billgst"
+            android:layout_toRightOf="@+id/billno"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:hint="Date"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="15dp" />
+        <TextView
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:text="Items"
+            android:id="@+id/billitems"
+            android:textSize="20dp"
+            android:layout_below="@+id/billno"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:layout_width="65dp"
+            android:layout_height="40dp"
+            android:id="@+id/billadd1"
+            android:text="Add"
+            android:layout_below="@+id/billitems"
+            android:layout_marginLeft="10dp"/>
+        <Button
+            android:layout_width="65dp"
+            android:layout_height="40dp"
+            android:id="@+id/billadd2"
+            android:text="Add"
+            android:layout_below="@+id/billadd1"
+            android:layout_marginLeft="10dp"/>
+        <Button
+            android:layout_width="65dp"
+            android:layout_height="40dp"
+            android:id="@+id/billadd3"
+            android:text="Add"
+            android:layout_below="@+id/billadd2"
+            android:layout_marginLeft="10dp"/>
+        <Button
+            android:layout_width="65dp"
+            android:layout_height="40dp"
+            android:id="@+id/billadd4"
+            android:text="Add"
+            android:layout_below="@+id/billadd3"
+            android:layout_marginLeft="10dp"/>
+        <Button
+            android:layout_width="65dp"
+            android:layout_height="40dp"
+            android:id="@+id/billadd5"
+            android:text="Add"
+            android:layout_below="@+id/billadd4"
+            android:layout_marginLeft="10dp"/>
+        <Button
+            android:layout_width="65dp"
+            android:layout_height="40dp"
+            android:id="@+id/billadd6"
+            android:text="Add"
+            android:layout_below="@+id/billadd5"
+            android:layout_marginLeft="10dp"/>
+        <Button
+            android:layout_width="65dp"
+            android:layout_height="40dp"
+            android:id="@+id/billadd7"
+            android:text="Add"
+            android:layout_below="@+id/billadd6"
+            android:layout_marginLeft="10dp"/>
+
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/billitems"
+            android:id="@+id/billitems1"
+            android:layout_marginLeft="80dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <EditText
+                    android:id="@+id/billitem1"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:hint="Item1"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/billhsn1"
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/billitem1"
+                    android:background="@color/white"
+                    android:hint="hsn"
+                    android:padding="5dp"
+                    android:text="3926 9016"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/billpo1"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/billhsn1"
+                    android:background="@color/white"
+                    android:hint="PO no"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/billdc1"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/billpo1"
+                    android:background="@color/white"
+                    android:hint="DC no"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/billrate1"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/billdc1"
+                    android:background="@color/white"
+                    android:hint="rate1"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/billqty1"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/billrate1"
+                    android:background="@color/white"
+                    android:hint="qty1"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/billamount1"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_toRightOf="@+id/billqty1"
+                    android:background="@color/white"
+                    android:hint="Amount"
+                    android:padding="5dp"
+                    android:text="0.00"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="15dp" />
+            </RelativeLayout>
+
+        </HorizontalScrollView>
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/billitems1"
+            android:id="@+id/billitems2"
+            android:layout_marginLeft="80dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <EditText
+                    android:id="@+id/billitem2"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:hint="Item2"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="15dp" />
+                <EditText
+                    android:id="@+id/billhsn2"
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/billitem2"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:hint="hsn"
+                    android:text="3926 9016"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="15dp" />
+                <EditText
+                    android:id="@+id/billpo2"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/billhsn2"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:hint="PO no"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="15dp" />
+                <EditText
+                    android:id="@+id/billdc2"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/billpo2"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:hint="DC no"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="15dp" />
+                <EditText
+                    android:id="@+id/billrate2"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/billdc2"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:hint="rate2"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="15dp" />
+                <EditText
+                    android:id="@+id/billqty2"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/billrate2"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:hint="qty2"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="15dp" />
+                <EditText
+                    android:id="@+id/billamount2"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/billqty2"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:hint="Amount"
+                    android:text="0.00"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="15dp"
+                    android:layout_marginRight="20dp"/>
+            </RelativeLayout>
+
+        </HorizontalScrollView>
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/billitems2"
+            android:id="@+id/billitems3"
+            android:layout_marginLeft="80dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <EditText
+                    android:id="@+id/billitem3"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:hint="Item3"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="15dp" />
+                <EditText
+                    android:id="@+id/billhsn3"
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/billitem3"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:hint="hsn"
+                    android:text="3926 9016"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="15dp" />
+                <EditText
+                    android:id="@+id/billpo3"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/billhsn3"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:hint="PO no"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="15dp" />
+                <EditText
+                    android:id="@+id/billdc3"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/billpo3"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:hint="DC no"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="15dp" />
+                <EditText
+                    android:id="@+id/billrate3"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/billdc3"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:hint="rate3"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="15dp" />
+                <EditText
+                    android:id="@+id/billqty3"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/billrate3"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:hint="qty3"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="15dp" />
+                <EditText
+                    android:id="@+id/billamount3"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/billqty3"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:hint="Amount"
+                    android:text="0.00"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="15dp"
+                    android:layout_marginRight="20dp"/>
+            </RelativeLayout>
+
+        </HorizontalScrollView>
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/billitems3"
+            android:id="@+id/billitems4"
+            android:layout_marginLeft="80dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <EditText
+                    android:id="@+id/billitem4"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:hint="Item4"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="15dp" />
+                <EditText
+                    android:id="@+id/billhsn4"
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/billitem4"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:hint="hsn"
+                    android:text="3926 9016"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="15dp" />
+                <EditText
+                    android:id="@+id/billpo4"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/billhsn4"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:hint="PO no"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="15dp" />
+                <EditText
+                    android:id="@+id/billdc4"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/billpo4"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:hint="DC no"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="15dp" />
+                <EditText
+                    android:id="@+id/billrate4"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/billdc4"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:hint="rate4"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="15dp" />
+                <EditText
+                    android:id="@+id/billqty4"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/billrate4"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:hint="qty4"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="15dp" />
+                <EditText
+                    android:id="@+id/billamount4"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/billqty4"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:hint="Amount"
+                    android:text="0.00"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="15dp"
+                    android:layout_marginRight="20dp"/>
+            </RelativeLayout>
+
+        </HorizontalScrollView>
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/billitems4"
+            android:id="@+id/billitems5"
+            android:layout_marginLeft="80dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <EditText
+                    android:id="@+id/billitem5"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:hint="Item5"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="15dp" />
+                <EditText
+                    android:id="@+id/billhsn5"
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/billitem5"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:hint="hsn"
+                    android:text="3926 9016"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="15dp" />
+                <EditText
+                    android:id="@+id/billpo5"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/billhsn5"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:hint="PO no"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="15dp" />
+                <EditText
+                    android:id="@+id/billdc5"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/billpo5"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:hint="DC no"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="15dp" />
+                <EditText
+                    android:id="@+id/billrate5"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/billdc5"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:hint="rate5"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="15dp" />
+                <EditText
+                    android:id="@+id/billqty5"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/billrate5"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:hint="qty5"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="15dp" />
+                <EditText
+                    android:id="@+id/billamount5"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/billqty5"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:hint="Amount"
+                    android:text="0.00"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="15dp"
+                    android:layout_marginRight="20dp"/>
+            </RelativeLayout>
+
+        </HorizontalScrollView>
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/billitems5"
+            android:id="@+id/billitems6"
+            android:layout_marginLeft="80dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <EditText
+                    android:id="@+id/billitem6"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:hint="Item6"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="15dp" />
+                <EditText
+                    android:id="@+id/billhsn6"
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/billitem6"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:hint="hsn"
+                    android:text="3926 9016"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="15dp" />
+                <EditText
+                    android:id="@+id/billpo6"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/billhsn6"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:hint="PO no"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="15dp" />
+                <EditText
+                    android:id="@+id/billdc6"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/billpo6"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:hint="DC no"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="15dp" />
+                <EditText
+                    android:id="@+id/billrate6"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/billdc6"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:hint="rate6"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="15dp" />
+                <EditText
+                    android:id="@+id/billqty6"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/billrate6"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:hint="qty6"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="15dp" />
+                <EditText
+                    android:id="@+id/billamount6"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/billqty6"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:hint="Amount"
+                    android:text="0.00"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="15dp"
+                    android:layout_marginRight="20dp"/>
+            </RelativeLayout>
+
+        </HorizontalScrollView>
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/billitems6"
+            android:id="@+id/billitems7"
+            android:layout_marginLeft="80dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <EditText
+                    android:id="@+id/billitem7"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:hint="Item7"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="15dp" />
+                <EditText
+                    android:id="@+id/billhsn7"
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/billitem7"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:hint="hsn"
+                    android:text="3926 9016"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="15dp" />
+                <EditText
+                    android:id="@+id/billpo7"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/billhsn7"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:hint="PO no"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="15dp" />
+                <EditText
+                    android:id="@+id/billdc7"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/billpo7"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:hint="DC no"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="15dp" />
+                <EditText
+                    android:id="@+id/billrate7"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/billdc7"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:hint="rate7"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="15dp" />
+                <EditText
+                    android:id="@+id/billqty7"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/billrate7"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:hint="qty7"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="15dp" />
+                <EditText
+                    android:id="@+id/billamount7"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/billqty7"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:hint="Amount"
+                    android:text="0.00"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="15dp"
+                    android:layout_marginRight="20dp"/>
+            </RelativeLayout>
+
+        </HorizontalScrollView>
+
+        <TextView
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:id="@+id/billsubtotal"
+            android:layout_below="@+id/billitems7"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="Sub Total:"/>
+
+        <EditText
+            android:id="@+id/billsubtotals"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/billitems7"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/billsubtotal"
+            android:background="@color/white"
+            android:hint="Sub-Total"
+            android:padding="5dp"
+            android:text="0.00"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="15dp" />
+        <TextView
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:id="@+id/billcgst"
+            android:layout_below="@+id/billsubtotal"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="9% CGST:"/>
+        <EditText
+            android:id="@+id/billcgsts"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/billsubtotal"
+            android:layout_toRightOf="@+id/billcgst"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:hint="CGST"
+            android:text="0.00"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="15dp" />
+        <TextView
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:id="@+id/billigst"
+            android:layout_below="@+id/billcgst"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="9% IGST:"/>
+        <EditText
+            android:id="@+id/billigsts"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/billcgst"
+            android:layout_toRightOf="@+id/billigst"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:hint="IGST"
+            android:text="0.00"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="15dp" />
+        <TextView
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:id="@+id/billroundof"
+            android:layout_below="@+id/billigst"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="Round Off:"/>
+        <EditText
+            android:id="@+id/billroundoff"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/billigst"
+            android:layout_toRightOf="@+id/billroundof"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:hint="Round Off"
+            android:text="0.00"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="15dp" />
+        <TextView
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:id="@+id/billtotal"
+            android:layout_below="@+id/billroundof"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="Total:"/>
+        <EditText
+            android:id="@+id/billtotals"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/billroundof"
+            android:layout_toRightOf="@+id/billtotal"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:hint="Total"
+            android:text="0.00"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="15dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/billtotalwords"
+            android:layout_below="@+id/billtotal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="20dp"
+            android:text="Rupees"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/generatebill"
+            android:layout_below="@+id/billtotalwords"
+            android:layout_centerHorizontal="true"
+            android:text="Generate"
+            android:layout_marginBottom="100dp"/>
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+</ScrollView>
